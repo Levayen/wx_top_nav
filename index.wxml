@@ -1,0 +1,15 @@
+<view class='nav-wrap' style='background-color: {{navbarData.bg_color}};{{navbarData.show_border == "1" ? "box-shadow:0rpx 2rpx 0rpx 0rpx rgba(0,0,0,0.1);" : ""}};height:{{ height*2 + 88 }}rpx'>
+    <!-- // 导航栏 中间的标题 -->
+  <view class='nav-title' style='color: {{navbarData.color}}; top:{{ height*2 }}rpx; '>{{navbarData.title}}
+  <view style='display: flex; justify-content: space-around;flex-direction: column'>
+      <!-- // 导航栏  左上角的返回按钮 和home按钮
+      //  其中wx:if='{{navbarData.showCapsule}}' 是控制左上角按钮的显示隐藏，首页不显示 -->
+    <view class='nav-capsule'>
+      <view wx:if="{{navbarData.showCapsule}}" bindtap='navBack' class='iconfont icon-left fs_17' style='color: {{navbarData.color}};  display: flex; align-items: center;justify-content: center;'></view>
+      <view wx:if="{{navbarData.userIndex}}" class='iconfont icon-xinxi' style='color: {{navbarData.color}};font-size: 45rpx' catchtap='goxinxi'></view>
+    </view>
+  </view>
+</view>
+</view>
+<!-- 填充 -->
+<view style="height:{{ height*2 + 88 }}rpx"></view>

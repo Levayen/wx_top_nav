@@ -1,0 +1,70 @@
+/* components/navbar/index.wxss */
+/* 顶部要固定定位   标题要居中   自定义按钮和标题要和右边微信原生的胶囊上下对齐 */
+.nav-wrap {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* padding-top: 40rpx; */
+  /* height: 130rpx; */
+  background:rgba(255,255,255,1);
+  z-index: 999999;
+}
+/* 标题要居中 */
+.nav-title {
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* top: 0; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 36rpx;
+  font-weight: 500;
+  height: 88rpx;
+  line-height: 88rpx
+}
+.nav-title > view{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav-capsule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 30rpx; */
+  height: 88rpx;
+  width: 90rpx;
+  z-index: 2013;
+}
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1315711_ix8pxd9e2z.eot?t=1564038467673'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_1315711_ix8pxd9e2z.eot?t=1564038467673#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAKcAAsAAAAABkAAAAJRAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcApMYQE2AiQDCAsGAAQgBYRtBy4bhQUR1Ytjsr8hGof3FcxACNU9a2XrVqnIQeUW3zx5xABT/z1owBJwBCQAAAAAQARfa5/9dmb/zSEGUcYDkEJUEYpZRqeiYuPYXvmgBBJ6E0DGvyZ4yoV5c66R6p+fjVAjOUvv0Q6TdkBZnvK/vi0fWFS7yy6QV5tIAS5KgEHhAEiGw3+f53J6E+hArvGBctyL1hjUC6gXB1Kge2AUWaEE3jB2wQt8TKDDdEvFmnLLHkVmrwrE+eHUEaUQkGWWLkKr4WAWD9VKdavKg+j78bcoVOrErtpxcu1xK374Tla62GR/QAgS0PEaCUuRiT2NiW2SYFzSkchmc6zy4IffHNjFUS2C/XV2aReYCqXPJPNWClDBY001iPFJP4sY7DY0cqP6xS+fD/UnnvX641E3bw9YS5vqhYYTp5pYAZqdU2YFgsnrVr0vlww+Va6OfM2eYS7KTpzBz5ANHMiGwrZVWZM1jlYGT9LWoQMN7Bnwfapx+MyZUAxPcLWZliEp5pKZXYpap2VoKZajwxLrj3cadEESuR2LXQMIfV6h0uMNkj6TZGa/oTbiP1r6IqHDvnBhp/lhDSpjbAR7aP8wdNtKrkNUXH5D/Z4bzisi/oV8DmGIg6icvuKKvMSW86MTEQLibYESPIfzvMHO24idBEZkT8OQmt4UdNtiKRljI9hD+4eh21YKxouqfP6G+j033NFXl3whn8PsEAfRAPKqXQf1Pcor50cnIgTE2wIlmIfzvMHePG/ETgIzIbanoTOMhmqD7fXL353AshTb5IRTn3jnkcSyAAA=') format('woff2'),
+  url('//at.alicdn.com/t/font_1315711_ix8pxd9e2z.woff?t=1564038467673') format('woff'),
+  url('//at.alicdn.com/t/font_1315711_ix8pxd9e2z.ttf?t=1564038467673') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_1315711_ix8pxd9e2z.svg?t=1564038467673#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 88rpx;
+  width: 90rpx;
+  z-index: 999999;
+}
+
+.icon-left:before {
+  content: "\e617";
+
+}
+.icon-xinxi:before {
+  content: "\e8b0";
+}
